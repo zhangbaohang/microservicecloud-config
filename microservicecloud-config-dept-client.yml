@@ -8,7 +8,7 @@ server:
 spring:
     profiles: dev
     application:
-        name: microserviceccloud-config-dept-client
+        name: microservicecloud-config-dept-client
     datasource:
         type: com.alibaba.druid.pool.DruidDataSource    # 当前数据源操作类型
         driver-class-name: com.mysql.cj.jdbc.Driver      # mysql驱动包
@@ -28,7 +28,7 @@ mybatis:
 eureka:
     client:
         service-url:
-            defaultZone: http:eureka7001:7001/eureka/
+            defaultZone: http://eureka7001:7001/eureka/
     instance:
         instance-id: microservicecloud-dept8001   # 自定义服务名称信息
         prefer-ip-address: true   # 访问路径可以显示ip地址
@@ -43,7 +43,7 @@ server:
 spring:
     profiles: test
     application:
-        name: microserviceccloud-config-dept-client
+        name: microservicecloud-config-dept-client
     datasource:
         type: com.alibaba.druid.pool.DruidDataSource    # 当前数据源操作类型
         driver-class-name: com.mysql.cj.jdbc.Driver      # mysql驱动包
@@ -63,7 +63,7 @@ mybatis:
 eureka:
     client:
         service-url:
-            defaultZone: http:eureka7001:7001/eureka/
+            defaultZone: http://eureka7001:7001/eureka/
     instance:
         instance-id: microservicecloud-dept8001   # 自定义服务名称信息
         prefer-ip-address: true   # 访问路径可以显示ip地址
